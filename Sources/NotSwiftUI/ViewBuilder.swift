@@ -1,5 +1,6 @@
 import Foundation
 
+//@_functionBuilder
 @resultBuilder
 struct ViewBuilder {
     typealias Expression = Body
@@ -15,6 +16,7 @@ struct ViewBuilder {
     static func buildBlock(_ children: View...) -> Expression {
         return .collection(children)
     }
+
     static func buildBlock(_ collection: [View]) -> Expression {
         return .collection(collection)
     }

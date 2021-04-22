@@ -3,9 +3,11 @@ import UIKit
 class Text: View {
     
     var text: String
+
+    var label = UILabel()
     
     var body: Body {
-        .uiView(UILabel())
+        .uiView(label)
     }
     
     init(_ text: String) {
